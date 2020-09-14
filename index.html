@@ -3,12 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Etsy Page</title>
+    <title>Whiskey | Etsy </title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://www.etsy.com/images/favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div id="main-container"></div>
-    <div id="nav-bar"></div>
-    <div id="items-container"></div>
-    <div id="footer"></div>
+    <div class="main-container">
+    <div id="nav-bar" class="container1">
+      <img
+        id="logo"
+        src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft1.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQGSBGe07eUICLKPeQz9TMeGguRmspZvqi5OxUCTENJoOSRI7gR&psig=AOvVaw0KQw6_H1H_BknXUlsNiLr-&ust=1599866655411000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDDm-_d3-sCFQAAAAAdAAAAABAD"
+        alt="etsy-logo"
+      />
+      <input type="text" placeholder="Whiskey" />
+      <section>
+        <a href="#">Sign in</a>
+        <!-- <a href="#">cart</a> -->
+        <img
+          id="cart"
+          src="https://static.thenounproject.com/png/2311218-200.png"
+          alt="Cart"
+        />
+      </section>
+    </div>
+
+    <!-- <div class="nav-bar2 dropdown"> -->
+      <div id="bottomNav">
+        <li id="firstNav" class="cool-link">Everyday Finds</li>
+
+       <div class="jewelerydropdown">
+           
+            <li class="cool-link">Jewelry & Accessories</li>
+            <div class="dropcontent">
+                <div class="accDropDown">
+                    <div class='acc-Flex'>
+                        <div class='insideContent'>
+                            <div class='left'>
+                                <a href="#">All Jewelry & Accessories<i  class="fa fa-arrow-right"></i></a>
+                                <a id="Accessories" href="#">Accessories <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Bags & Purses <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Necklaces <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Rings <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Earrings <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Bracelets <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Body Jewelry <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">All Jewelry <i  class="fa fa-arrow-right"></i></a>
+                            </div>
+                            <div class='middle'>
+                                <a href="#">Hats & Caps</a>
+                                <a href="#">Beanies & Winter Hats</a>
+                                <a href="#">Hair Accessories</a>
+                                <a href="#">Headbands</a>
+                                <a href="#">Fascinators & Mini Hats</a>
+                                <a href="#">Wreaths & Tiaras</a>
+                                <a href="#">Sunglasses & Eyewear</a>
+                            </div>
+                            <div class='right'>
+                                <img
+                                    src="https://i.etsystatic.com/8595828/c/2068/1643/347/721/il/663a12/1888311329/il_340x270.1888311329_cctg.jpg">
+                                <p id="muted-text">Editor's Picks</p>
+                                <h4>Jewelry, handbags, and accessories<h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jewelerydropdown">
+            <li class="cool-link">Clothing & Shoes</li>
+            <!-- <div class="dropcontent">
+                <a href="#">All Clothing & Shoes <i class="fa fa-arrow-right"></i></a>
+                <a href="#">Women's <i class="fa fa-angle-right"></i></a>
+                <a href="#">Men's <i class="fa fa-angle-right"></i></a>
+                <a href="#">Kid's & Baby's <i class="fa fa-angle-right"></i></a>
+                <a href="#">Bag's & Purses <i class="fa fa-angle-right"></i></a>
+            </div> -->
+        </div>
+        <li id="alignWLink" class="cool-link">Home & Living</li>
+        <li id="alignWLink" class="cool-link">Wedding & Party</li>
+        <li id="alignWLink" class="cool-link">Toys & Entertainment</li>
+        <li id="alignWLink" class="cool-link">Art & Collectibles</li>
+        <li id="alignWLink" class="cool-link">Craft Supplies</li>
+        <li class="cool-link"><i class="fa fa-gift"></i> Gifts</li>
+        
+    </div>
+    <hr />
+
+    <button type="button" class="btn">
+      <!-- <i class="fa fa-filter"></i>Filters -->
+      <img id="filters" src="https://www.flaticon.com/premium-icon/icons/svg/3161/3161370.svg" alt="filter"> Filters
+    </button>
+    <button type="button">
+     <img id="sort" src="https://www.flaticon.com/svg/static/icons/svg/2223/2223723.svg" alt="sort">
+      Sort by: Relevancy</button>
+    <!-- grid pictures container below -->
+    <div class="container2">
+      <main id="products"></main>
+    </div>
+  </div>
+
+
+
+
+    <hr />
+    <hr />
+
+
+
+
+
+
+
+    
+    <!-- <div id="footer">
+      <h3>
+        Yes! Send me exclusive offers, unique gift ideas, and personalized tips
+        for shopping and selling on Etsy.
+      </h3>
+      <input id="subscribe" type="email" placeholder="Enter your email" />
+      <section class="shop-sell-ftr">
+      <p>Shop</p>
+      
+      <p>Sell</p>
+      <p>About</p>
+      <p>Help</p>
+      </section>
+      <section class="shop-footer">
+        <p>Gift Cards</p>
+        <p>Etsy blog</p>
+      </section>
+    </div> -->
+    
+
+
+
+
+    <section class="footer">
+      <div class="subscribe">
+        <p>
+          Yes! Send me exclusive offers, unique gift ideas, and personalized
+          tips for shopping and selling on Etsy.
+        </p>
+        <div class="email">
+          <input
+            class="emailinput"
+            type="email"
+            placeholder="Enter your email"
+          />
+          <button type="submit" class="emailbtn">Subscribe</button>
+        </div>
+      </div>
+      <div class="rows">
+        <div class="row1">
+          <ul>
+            <li id="head">Shop</li>
+            <li>Gift Cards</li>
+            <li>Etsy blog</li>
+          </ul>
+        </div>
+        <div class="row2">
+          <ul>
+            <li id="head">Sell</li>
+            <li>Sell on Etsy</li>
+            <li>Teams</li>
+            <li>Forums</li>
+            <li>Affiliates</li>
+          </ul>
+        </div>
+        <div class="row3">
+          <ul>
+            <li id="head">About</li>
+            <li>Etsy Inc.</li>
+            <li>Policies</li>
+            <li>Investors</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Impact</li>
+          </ul>
+        </div>
+        <div class="row4">
+          <ul>
+            <li id="head">Help</li>
+            <li>Help Center</li>
+            <li>Privacy settings</li>
+            <button class="download">
+              <i class="fa fa-etsy"> </i> Download the Etsy app
+            </button>
+
+            <li class="media">
+              <i id="icons2" class="fa fa-instagram"></i>
+              <i id="icons2" class="fa fa-facebook-square"></i>
+              <i id="icons2" class="fa fa-pinterest"></i>
+              <i id="icons2" class="fa fa-twitter"></i>
+              <i id="icons2" class="fa fa-youtube-play"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+
+      
+
+   
+    <div id="footer2">
+      <h4>United States | English(US) | $ (USD)</h4>
+      <p>&#169; 2020 Etsy, Inc.</p>
+      <a class="ftr" href="#">Terms of Use</a>
+      <a class="ftr" href="#">Privacy</a>
+      <a class="ftr" href="#">Interest-based ads</a>
+    </div>
+
+    <script src="items.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
