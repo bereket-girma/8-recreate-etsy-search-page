@@ -253,12 +253,11 @@ main {
 /* #footer-img {
     width: 100%;
 } */
-
-/* #footer {
+#footer {
   background-image: url("images/background.png");
   width: 100%;
   height: 500px;
-} */
+}
 
 h3 {
   font-weight: lighter;
@@ -266,6 +265,21 @@ h3 {
 }
 
 #subscribe {
+  
+  width: 1000px;
+    height: 12%;
+    position: relative;
+    top: -96px;
+   
+    left: 193px;
+}
+ .shop-sell-ftr{
+  display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 26px;
+    color: white;
+    font-size: 20px;
   width: 1000px;
   height: 12%;
   position: relative;
